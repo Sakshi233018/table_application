@@ -1,0 +1,151 @@
+html,
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+header {
+  padding: 16px 0px;
+}
+
+header title {
+  padding: 4px;
+}
+
+header h1 {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin: 0px;
+}
+.container{
+  margin: 12px;
+}
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+thead {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th,
+td {
+  font-family: Hanken Grotesk;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;          
+  padding: 4px 8px;         
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #64748b;
+}
+tr {
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 6px;
+  height: 44px;             
+}
+
+th {
+  text-align: left;
+}
+thead th {
+  color: #64748B;
+  font-family: Hanken Grotesk;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.03); /* lighter for subtle hover */
+}
+
+tbody td {
+  position: relative;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #334155;
+}
+
+/* Subtle background hover effect */
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+/* Status styles */
+.cell-bg {
+  background-color: #f9fafb; /* a light grey */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: Hanken Grotesk;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0%;
+vertical-align: middle;
+ display: inline-block;
+}
+.status-active {
+  background-color: #6CA621;
+  color: #ffffff;
+}
+.status-suspended {
+  background-color: #FABB22;
+  font-weight: bold;
+  color: #ffffff;
+}
+.status-other {
+   background-color: #E04E39;
+   color: #ffffff;
+}
+/* Sync styles */
+.sync-success {
+   background-color: #6CA621;
+  font-weight: bold;
+  color: #ffffff;
+}
+.sync-warning {
+   background-color: #FABB22;
+  font-weight: bold;
+  color: #ffffff;
+}
+.sync-other {
+   background-color: #E04E39;
+   color: #ffffff;
+}
+tbody tr td:first-child .cell-bg {
+  padding-left: 0px; 
+}
+.cell-sync {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-sync-success {
+  color: #ffffff;  
+}
+
+.icon-sync-warning {
+  color: #ffffff;  
+}
+
+.icon-sync-other {
+  color: #ffffff;  
+}
+
